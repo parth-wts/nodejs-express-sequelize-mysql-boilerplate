@@ -1,0 +1,22 @@
+sequelize
+reference link - https://sequelize.org/master/manual/migrations.html
+
+Creating the first Model (and Migration)
+    - npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+Running Migrations
+    - npx sequelize-cli db:migrate
+
+Undoing Migrations
+    - npx sequelize-cli db:migrate:undo
+
+Creating the first Seed
+    - npx sequelize-cli seed:generate --name user
+
+Running Seeds
+    - npx sequelize-cli db:seed:all
+
+Undoing Seeds
+    - npx sequelize-cli db:seed:undo
+
+
